@@ -1,6 +1,5 @@
-div1 = document.getElementById("div1");
-
 function bonjour(...myValue) {
+    div1 = document.getElementById("div1");
     div1.innerHTML = "Bonjour ";
     for (let value of myValue) {
         div1.innerHTML += value + ", ";
@@ -9,3 +8,6 @@ function bonjour(...myValue) {
 }
 
 bonjour("param1", "param2", "param3");
+let deuxieme = new bonjour("chocolat", "fruit", "legume", "tartiflette");
+let troisieme = new bonjour("danse", "foot", "handball", "tennis");
+
